@@ -1,17 +1,16 @@
 package br.unipar;
 
 public class ContaPoupanca extends HerancaContaBancaria {
+
+    private final Double TAXA = 5d;
+
     public boolean saque(Double valor) {
 
-        double verificar = saldo;
-        verificar += 5;
-        if (verificar >= valor) {
+        if ((saldo - TAXA) >= valor) {
             saldo -= valor;
-            saldo -= 5;
+            saldo -= TAXA;
             return true;
         }
-
-
         return false;
     }
 }

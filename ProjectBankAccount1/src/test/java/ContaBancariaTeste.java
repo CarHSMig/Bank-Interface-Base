@@ -14,7 +14,6 @@ public class ContaBancariaTeste {
         assertEquals(conta.obterSaldo(), 5000);
     }
 
-
     @Test
     public void testSaqueContaCorrente() {
         ContaCorrente conta = new ContaCorrente();
@@ -33,7 +32,6 @@ public class ContaBancariaTeste {
 
         assertTrue(validacao);
         assertEquals(0, conta.obterSaldo());
-
 
     }
 }
